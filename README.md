@@ -17,9 +17,10 @@ This library has a collection of Notebooks and code examples for AWS AI Bootcamp
 
 1. Create EC2 IAM role for the workshop as described [here](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/iam-roles-for-amazon-ec2.html#create-iam-role). We will apply permission policies as documented in each notebook
 2. Launch EC2 Instance using the Ubuntu deep learning AMI in eu-west-1, Ireland (p2.xlarge - $0.972/hour) http://amzn.to/2j3FdOZ
+(ivp: ami-999844e0 right AMI)
 3. Connect via SSH and tunnel port 8888:
     * Linux, Mac:
-        - `ssh -i user.pem -L 8888:localhost:8888 ubuntu@ec2-ip-ip-ip-ip.region.compute.amazonaws.com`
+        - `ssh -i user.pem -L 8888:localhost:8888 ubuntu@ec2-ip-ip-ip-ip.region.compute.amazonaws.com` (ivp: use user ec2-user)
     * Windows: 
         - Follow the instructions [here](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/putty.html) to download PuTTY and to convert your private key
         - Host Name: `ubuntu@ec2-ip-ip-ip-ip.region.compute.amazonaws.com`
